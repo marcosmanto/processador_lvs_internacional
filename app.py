@@ -237,9 +237,9 @@ Os arquivos devem ser baixados diretamente do **Portal de Dados Abertos da ANTT*
 # Cria 3 colunas:
 # A do meio (3) é 3x maior que as laterais (1).
 # Em telas grandes, isso cria margens. Em telas pequenas, o Streamlit empilha ou ajusta.
-col_esq, col_meio, col_dir = st.columns([1, 4, 1])
+col_esq, col_meio, col_dir = st.columns([4, 1, 1])
 
-with col_meio:
+with col_esq:
     st.image(
         "instrucoes_antt_maior.png",
         caption="👆 Baixe arquivos do tipo CSV no Portal de Dados Abertos",
