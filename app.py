@@ -234,12 +234,17 @@ Os arquivos devem ser baixados diretamente do **Portal de Dados Abertos da ANTT*
 4.  Após o download, arraste os arquivos para a área pontilhada abaixo.
 """)
 
-# Se você quiser exibir o print que mencionou, salve a imagem na pasta e descomente a linha abaixo:
-st.image(
-    "instrucoes_antt_maior.png",
-    caption="👆  Baixe arquivos do tipo CSV na página Licenças de Viagens do Fretamento Eventual e Turístico nos Portal de Dados Abertos ANTT",
-    width="stretch",
-)
+# Cria 3 colunas:
+# A do meio (3) é 3x maior que as laterais (1).
+# Em telas grandes, isso cria margens. Em telas pequenas, o Streamlit empilha ou ajusta.
+col_esq, col_meio, col_dir = st.columns([1, 4, 1])
+
+with col_meio:
+    st.image(
+        "instrucoes_antt_maior.png",
+        caption="👆 Baixe arquivos do tipo CSV no Portal de Dados Abertos",
+        width="stretch",  # Preenche 100% da COLUNA DO MEIO, não da tela toda
+    )
 
 st.divider()
 
