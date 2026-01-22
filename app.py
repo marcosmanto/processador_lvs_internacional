@@ -236,7 +236,7 @@ Os arquivos devem ser baixados diretamente do **Portal de Dados Abertos da ANTT*
 
 # Se você quiser exibir o print que mencionou, salve a imagem na pasta e descomente a linha abaixo:
 st.image(
-    "instrucoes_antt.png",
+    "instrucoes_antt_maior.png",
     caption="👆  Baixe arquivos do tipo CSV na página Licenças de Viagens do Fretamento Eventual e Turístico nos Portal de Dados Abertos ANTT",
     width="stretch",
 )
